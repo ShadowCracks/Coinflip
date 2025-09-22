@@ -116,6 +116,7 @@
   background: linear-gradient(135deg, #ffd700, #ffed4e);
   color: #8b4513;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transform: rotateY(0deg);
 }
 
 .coin-face.tails {
@@ -125,9 +126,14 @@
   transform: rotateY(180deg);
 }
 
-.coin.heads .coin-face.heads,
-.coin.tails .coin-face.tails {
-  z-index: 2;
+/* Show heads when coin state is heads */
+.coin.heads {
+  transform: rotateY(0deg);
+}
+
+/* Show tails when coin state is tails */
+.coin.tails {
+  transform: rotateY(180deg);
 }
 
 /* Betting Section */
