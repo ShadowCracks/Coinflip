@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import CoinFlip from './components/CoinFlip.tsx'
 import './App.css'
 
